@@ -23,34 +23,58 @@ Langage : Solidity language V0.4.0 to V0.7.0
 ---
 
 ## Objectives
--> Provide a secure and transparent platform for the exchange of data on clinical trial effects. 
+Provide a secure and transparent platform for the exchange of data on clinical trial effects. 
 
 
 ---
 ## Demonstration 
-### <ins>Step 1</ins> : registration / recording of the practitioner's address ans the patient
-Choose an address for the practittioner and the patient. With the practitioner's address click to register. Then,  in the 'inscriptionPatient' section, add the patient address and the name of the medicine in trials. During the trial, only one drug is prescribed to the patient. 
+<table >
+  <tr >
+    <th style="width:50%;"><ins>Step 1</ins> : registration / recording of the practitioner's address and the patient</th>
+    <th style="width:50%;"><ins>Step 2</ins> : add patient feedback </th>
+  </tr>
 
-_NB_ : only the practitionner can register patient address and see data collected (see Step 3).
+  <tr>
+    <td>Choose an address for the practittioner and the patient. With the practitioner's address click to register. Then,  in the 'inscriptionPatient' section, add the patient address and the name of the medicine in trials. During the trial, only one drug is prescribed to the patient. <br><br>NB_ : only the practitionner can register patient address and see data collected (see Step 3). 
+</td>
+    <td>For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
+    The patient's information and comments will be directly associated with the tested drug.
+</td>
+  </tr>
 
-![](/capture_img/inscrp_me.gif) 
+  <tr>
+    <td><img src="capture_img/inscription.gif" width="450"/></td>
+    <td><img src="capture_img/patient_feedback.gif" width="450"/></td>
+  </tr>
+</table>
 
-<br>
+<table >
+  <tr >
+    <th style="width:100%;"><ins>Step 3</ins> : get data </th>
+  </tr>
 
-### <ins>Step 2</ins> : patient add return on the drug 
-For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
-The patient's information and comments will be directly associated with the tested drug.
+  <tr>
+    <td>To access the collected data, identify yourself with the doctor's address. There are three ways to search the data: 
+        * with the patient's address 
+        * by drug name 
+        * get all the data recorded
+</td>
+  </tr>
 
-![](/capture_img/patient_section.gif)
-
-<br>
-
-### <ins>Step 3</ins> : view the data collected 
-To access the collected data, identify yourself with the doctor's address. There are three ways to search the data: 
-* with the patient's address 
-* by drug name 
-* get all the data recorded
-
-![](/capture_img/call_data.gif)
+  <tr>
+    <td><img src="capture_img/get_data.gif" width="450"/></td>
+  </tr>
+</table>
 
 
+---
+
+## Data collected 
+Data collected in the demo : 
+| Patient address                               | Drug      | Feedback       |
+| -------------                                 |:---------:|  -----         |
+| 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2    | Doliprane | Vertiges       |
+| 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2    | Doliprane | Maux de ventre |
+
+
+On the platform, data is in tuple format.
