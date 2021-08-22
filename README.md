@@ -28,7 +28,7 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 ---
 ## Demonstration 
-<table >
+<table style="width:100%;">
   <tr >
     <th style="width:50%;"><ins>Step 1</ins> : registration / recording of the practitioner's address and the patient</th>
     <th style="width:50%;"><ins>Step 2</ins> : add patient feedback </th>
