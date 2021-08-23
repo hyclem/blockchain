@@ -50,14 +50,14 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 <table >
   <tr >
-    <th style="width:50%;"><ins>Step 2</ins> : add patient feedback  </th>
+    <th><ins>Step 2</ins> : add patient feedback  </th>
   </tr>
 
   <tr>
     <td style="width:40%;">For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
     The patient's information and comments will be directly associated with the tested drug.
 </td>
-    <td><img src="capture_img/patient_feedback.gif" width="450" height="450"/></td>
+    <td style="width:50%;"><img src="capture_img/patient_feedback.gif" width="450" height="450"/></td>
   </tr>
 </table>
 
