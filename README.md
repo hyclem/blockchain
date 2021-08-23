@@ -51,6 +51,7 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 <table >
   <tr >
     <th><ins>Step 2</ins> : add patient feedback  </th>
+    <th>                                          </th>
   </tr>
 
   <tr>
