@@ -51,10 +51,11 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 <table style="width:100%;">
   <tr >
+    <th></th>
     <th style="width:50%;"><ins>Step 1</ins> : registration / recording of the practitioner's address and the patient</th>
   </tr>
   <tr>
-    <td><img src="capture_img/inscription.gif" width="450"/></td>
+    <td style="text-align:center;"><img src="capture_img/inscription.gif" width="450"/></td>
     <td>Choose an address for the practitioner and the patient. With the practitioner's address click to register. Then,  in the 'inscriptionPatient' section, add the patient address and the name of the medicine in trials. During the trial, only one drug is prescribed to the patient. <br><br>NB_ : only the practitionner can register patient address and see data collected (see Step 3). 
 </td>
   </tr>
@@ -63,14 +64,13 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 <table >
   <tr >
-    <th><ins>Step 2</ins> : add patient feedback  </th>
-    <th> Demonstration  </th>
+    <th style="width:100%;"><ins>Step 2</ins> : add patient feedback  </th>
   </tr>
   <tr>
-    <td style="width:20%;">For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
+    <td>For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
     The patient's information and comments will be directly associated with the tested drug.
 </td>
-    <td  style="width:80%;"><img src="capture_img/patient_feedback.gif" width="450"/></td>
+    <td style="text-align:center;"><img src="capture_img/patient_feedback.gif" width="450"/></td>
   </tr>
 </table>
 
