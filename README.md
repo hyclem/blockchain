@@ -60,6 +60,8 @@ Provide a secure and transparent platform for the exchange of data on clinical t
     Then,  in the 'inscriptionPatient' section, add the patient address and the name of the medicine in trials. 
     During the trial, only one drug is prescribed to the patient. <br><br>NB_ : only the practitionner can register patient address and see data collected (see Step 3). 
 </td>
+  </tr>
+  <tr>
     <td style="text-align:center;"><img src="capture_img/inscription.gif" width="450"/></td>
   </tr>
 </table>
@@ -74,6 +76,8 @@ Provide a secure and transparent platform for the exchange of data on clinical t
     You now have the possibility, as a patient, to give your feedback on the tested drug. 
     The patient's information and comments will be directly associated with the tested drug.
 </td>
+  </tr>
+  <tr>
     <td style="text-align:center;"><img src="capture_img/patient_feedback.gif" width="450"/></td>
   </tr>
 </table>
@@ -89,6 +93,8 @@ Provide a secure and transparent platform for the exchange of data on clinical t
         <li>by drug name </li>
         <li>get all the data recorded</li>
 </td>
+  </tr>
+  <tr>
     <td style="text-align:center;"><img src="capture_img/get_data.gif" width="450"/></td>
   </tr>
 </table>
