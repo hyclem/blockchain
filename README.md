@@ -49,6 +49,18 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 </table>
 
 
+<table style="width:100%;">
+  <tr >
+    <th style="width:50%;"><ins>Step 1</ins> : registration / recording of the practitioner's address and the patient</th>
+  </tr>
+  <tr>
+    <td><img src="capture_img/inscription.gif" width="450"/></td>
+    <td>Choose an address for the practitioner and the patient. With the practitioner's address click to register. Then,  in the 'inscriptionPatient' section, add the patient address and the name of the medicine in trials. During the trial, only one drug is prescribed to the patient. <br><br>NB_ : only the practitionner can register patient address and see data collected (see Step 3). 
+</td>
+  </tr>
+</table>
+
+
 <table >
   <tr >
     <th><ins>Step 2</ins> : add patient feedback  </th>
@@ -67,16 +79,12 @@ Provide a secure and transparent platform for the exchange of data on clinical t
   <tr >
     <th style="width:100%;"><ins>Step 3</ins> : get data </th>
   </tr>
-
   <tr>
     <td>To access the collected data, identify yourself with the doctor's address. There are three ways to search the data: 
         <li>with the patient's address </li>
         <li>by drug name </li>
         <li>get all the data recorded</li>
 </td>
-  </tr>
-
-  <tr>
     <td style="text-align:center;"><img src="capture_img/get_data.gif" width="450"/></td>
   </tr>
 </table>
