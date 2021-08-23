@@ -28,6 +28,7 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 ---
 ## Demonstration 
+<!--
 <table style="width:100%;">
   <tr >
     <th style="width:50%;"><ins>Step 1</ins> : registration / recording of the practitioner's address and the patient</th>
@@ -46,7 +47,7 @@ Provide a secure and transparent platform for the exchange of data on clinical t
     <td><img src="capture_img/inscription.gif" width="450"/></td>
     <td><img src="capture_img/patient_feedback.gif" width="450"/></td>
   </tr>
-</table>
+</table> -->
 
 
 <table style="width:100%;">
@@ -63,7 +64,7 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 <table >
   <tr >
-    <th style="width:100%;"><ins>Step 2</ins> : add patient </th>
+    <th style="width:100%;"><ins>Step 2</ins> : add patient feedback </th>
   </tr>
   <tr>
     <td>For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
