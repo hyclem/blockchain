@@ -50,14 +50,30 @@ Provide a secure and transparent platform for the exchange of data on clinical t
 
 <table >
   <tr >
+    <th style="width:100%;"><ins>Step 2</ins> : add patient feedback  </th>
+  </tr>
+
+  <tr>
+    <td>For this step, enter the address of the selected patient in the "account" section. You now have the possibility, as a patient, to give your feedback on the tested drug. 
+    The patient's information and comments will be directly associated with the tested drug.
+</td>
+  </tr>
+
+  <tr>
+   <td><img src="capture_img/patient_feedback.gif" width="450"/></td>
+  </tr>
+</table>
+
+<table >
+  <tr >
     <th style="width:100%;"><ins>Step 3</ins> : get data </th>
   </tr>
 
   <tr>
     <td>To access the collected data, identify yourself with the doctor's address. There are three ways to search the data: 
-        * with the patient's address 
-        * by drug name 
-        * get all the data recorded
+        <li>with the patient's address </li>
+        <li>by drug name </li>
+        <li>get all the data recorded</li>
 </td>
   </tr>
 
