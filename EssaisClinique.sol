@@ -3,8 +3,8 @@ pragma experimental ABIEncoderV2;
 
 contract EssaisCliniques {
     
-    mapping (address => uint) LPatient; // list de patient inscrit (autorise le retour d'essai de medicament)
-    mapping (address => uint) LMedecin; // list de medecin inscrit (autorise l'inscrition patient)
+    mapping (address => uint) LPatient; // list of registered patient 
+    mapping (address => uint) LMedecin; // list of registered doctors 
 
     struct retourPatient {
         address patient;
@@ -12,22 +12,21 @@ contract EssaisCliniques {
         string retourDuPatient;
     }
     
-    retourPatient private retourP; // instanciation de la structure  // tableau retourP 
+    retourPatient private retourP; // instantiation of the structure  
     retourPatient[] private retourPatients; 
     
     struct MedicEssai {
         string medicName;
     }
-    mapping (address => MedicEssai) medicEssai; // permet recup les add patient pour un medicament donné
-    
+    mapping (address => MedicEssai) medicEssai; // get the patients added for a given medicine
     
     function inscriptionMedecin() public {
         require(LMedecin[msg.sender]==0, "Vous êtes déjà inscrit en tant que Medecin");
         LMedecin[msg.sender] += 1;
     }
     function inscriptionPatient (address patient, string memory _medicName) public { 
-    // verifier medecin inscrit, verifier entrée (add + medicament) non nulle 
-    // si tout ok alors incrit le patient dans la liste + stock l'add par le nom du medicament  
+    // check registered doctor, check entry (add + medication) not null 
+    // if all ok then put the patient in the list + stock the add by the name of the drug  
         require (LMedecin[msg.sender] ==1 , "Vous n'êtes pas inscrit en tant que Medecin, Accès refusé"); 
         require (patient != address(0), "Identifier le patient à inscrire"); 
         require (bytes(_medicName).length > 0 , "Communiquer le medicament"); 
@@ -37,7 +36,7 @@ contract EssaisCliniques {
     }
     
     function retourEssaiPatient(string memory descPatient) public returns (string memory) {
-    // permet au patient de faire son retour (on stock son adresse en meme temps), 
+    // allows the patient to make his return (we store his address at the same time)
         require (bytes(descPatient).length > 0 , "Communiquez la description"); 
         require (LPatient[msg.sender] ==1 , "Vous n'êtes pas inscrit en tant que patient, Accès refusé"); 
         retourPatient memory nouveauRetour = retourPatient(msg.sender, medicEssai[msg.sender].medicName, descPatient);
@@ -54,14 +53,14 @@ contract EssaisCliniques {
     }
     
     function GetAllReturn() public view returns (retourPatient[] memory) {
-    // seul le medecin peut vérifier ces informations 
-    // retourne les add patient et les retours associé du médicament cherché
+    // only the doctor is authorized to do this action  
+    // returns the added patients and the associated returns of the searched medicine
         require(LMedecin[msg.sender]==1, "Vous n'êtes pas inscrit en tant que Medecin, Accès refusé");
         return retourPatients;
     }
     function GetReturnByAddress(address addpatient) public view returns (retourPatient[] memory) {
-    // seul le medecin peut vérifier ces informations 
-    // retourne les add patient et les retours associé du médicament cherché
+    // only the doctor is authorized to do this action  
+    // returns the added patients and the associated returns of the searched medicine
         require(LMedecin[msg.sender]==1, "Vous n'êtes pas inscrit en tant que Medecin, Accès refusé");
         retourPatient[] memory subMsgs = new retourPatient[](retourPatients.length);
         uint count = 0;
@@ -74,8 +73,8 @@ contract EssaisCliniques {
         return subMsgs; 
     }
     function GetReturnByMedicament(string memory _medicName) public returns (retourPatient[] memory) {
-    // seul le medecin peut vérifier ces informations 
-    // retourne les add patient et les retours associé du médicament cherché
+    // only the doctor is authorized to do this action  
+    // returns the added patients and the associated returns of the searched medicine
         require(LMedecin[msg.sender]==1, "Vous n'êtes pas inscrit en tant que Medecin, Accès refusé");
         retourPatient[] memory subMsgs = new retourPatient[](retourPatients.length);
         uint count = 0;
